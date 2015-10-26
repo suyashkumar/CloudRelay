@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B524A0681BDC4E260018F225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524A0671BDC4E260018F225 /* AppDelegate.swift */; };
+		B524A06A1BDC4E260018F225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524A0691BDC4E260018F225 /* ViewController.swift */; };
+		B524A06D1BDC4E260018F225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B524A06B1BDC4E260018F225 /* Main.storyboard */; };
+		B524A06F1BDC4E260018F225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B524A06E1BDC4E260018F225 /* Assets.xcassets */; };
+		B524A0721BDC4E260018F225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B524A0701BDC4E260018F225 /* LaunchScreen.storyboard */; };
+		B524A07D1BDC4E270018F225 /* RelayToggleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524A07C1BDC4E270018F225 /* RelayToggleTests.swift */; };
+		B524A0881BDC4E270018F225 /* RelayToggleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524A0871BDC4E270018F225 /* RelayToggleUITests.swift */; };
+		B524A08D1BDC4E270018F225 /* RelayToggle WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B524A08C1BDC4E270018F225 /* RelayToggle WatchKit App.app */; };
+		B524A0931BDC4E270018F225 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B524A0911BDC4E270018F225 /* Interface.storyboard */; };
+		B524A0951BDC4E270018F225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B524A0941BDC4E270018F225 /* Assets.xcassets */; };
+		B524A09C1BDC4E270018F225 /* RelayToggle WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B524A09B1BDC4E270018F225 /* RelayToggle WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B524A0A31BDC4E270018F225 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524A0A21BDC4E270018F225 /* InterfaceController.swift */; };
+		B524A0A51BDC4E270018F225 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524A0A41BDC4E270018F225 /* ExtensionDelegate.swift */; };
+		B524A0A71BDC4E270018F225 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524A0A61BDC4E270018F225 /* NotificationController.swift */; };
+		B524A0A91BDC4E270018F225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B524A0A81BDC4E270018F225 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B524A0791BDC4E270018F225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B524A05C1BDC4E260018F225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B524A0631BDC4E260018F225;
+			remoteInfo = RelayToggle;
+		};
+		B524A0841BDC4E270018F225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B524A05C1BDC4E260018F225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B524A0631BDC4E260018F225;
+			remoteInfo = RelayToggle;
+		};
+		B524A08E1BDC4E270018F225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B524A05C1BDC4E260018F225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B524A08B1BDC4E270018F225;
+			remoteInfo = "RelayToggle WatchKit App";
+		};
+		B524A09D1BDC4E270018F225 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B524A05C1BDC4E260018F225 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B524A09A1BDC4E270018F225;
+			remoteInfo = "RelayToggle WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B524A0B01BDC4E270018F225 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B524A09C1BDC4E270018F225 /* RelayToggle WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A0B41BDC4E270018F225 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B524A08D1BDC4E270018F225 /* RelayToggle WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B524A0641BDC4E260018F225 /* RelayToggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelayToggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B524A0671BDC4E260018F225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B524A0691BDC4E260018F225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B524A06C1BDC4E260018F225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B524A06E1BDC4E260018F225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B524A0711BDC4E260018F225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B524A0731BDC4E260018F225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B524A0781BDC4E270018F225 /* RelayToggleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelayToggleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B524A07C1BDC4E270018F225 /* RelayToggleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayToggleTests.swift; sourceTree = "<group>"; };
+		B524A07E1BDC4E270018F225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B524A0831BDC4E270018F225 /* RelayToggleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelayToggleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B524A0871BDC4E270018F225 /* RelayToggleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayToggleUITests.swift; sourceTree = "<group>"; };
+		B524A0891BDC4E270018F225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B524A08C1BDC4E270018F225 /* RelayToggle WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RelayToggle WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B524A0921BDC4E270018F225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B524A0941BDC4E270018F225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B524A0961BDC4E270018F225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B524A09B1BDC4E270018F225 /* RelayToggle WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RelayToggle WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B524A0A11BDC4E270018F225 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B524A0A21BDC4E270018F225 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B524A0A41BDC4E270018F225 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B524A0A61BDC4E270018F225 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B524A0A81BDC4E270018F225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B524A0AA1BDC4E270018F225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B524A0611BDC4E260018F225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A0751BDC4E270018F225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A0801BDC4E270018F225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A0981BDC4E270018F225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B524A05B1BDC4E260018F225 = {
+			isa = PBXGroup;
+			children = (
+				B524A0661BDC4E260018F225 /* RelayToggle */,
+				B524A07B1BDC4E270018F225 /* RelayToggleTests */,
+				B524A0861BDC4E270018F225 /* RelayToggleUITests */,
+				B524A0901BDC4E270018F225 /* RelayToggle WatchKit App */,
+				B524A09F1BDC4E270018F225 /* RelayToggle WatchKit Extension */,
+				B524A0651BDC4E260018F225 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B524A0651BDC4E260018F225 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B524A0641BDC4E260018F225 /* RelayToggle.app */,
+				B524A0781BDC4E270018F225 /* RelayToggleTests.xctest */,
+				B524A0831BDC4E270018F225 /* RelayToggleUITests.xctest */,
+				B524A08C1BDC4E270018F225 /* RelayToggle WatchKit App.app */,
+				B524A09B1BDC4E270018F225 /* RelayToggle WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B524A0661BDC4E260018F225 /* RelayToggle */ = {
+			isa = PBXGroup;
+			children = (
+				B524A0671BDC4E260018F225 /* AppDelegate.swift */,
+				B524A0691BDC4E260018F225 /* ViewController.swift */,
+				B524A06B1BDC4E260018F225 /* Main.storyboard */,
+				B524A06E1BDC4E260018F225 /* Assets.xcassets */,
+				B524A0701BDC4E260018F225 /* LaunchScreen.storyboard */,
+				B524A0731BDC4E260018F225 /* Info.plist */,
+			);
+			path = RelayToggle;
+			sourceTree = "<group>";
+		};
+		B524A07B1BDC4E270018F225 /* RelayToggleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B524A07C1BDC4E270018F225 /* RelayToggleTests.swift */,
+				B524A07E1BDC4E270018F225 /* Info.plist */,
+			);
+			path = RelayToggleTests;
+			sourceTree = "<group>";
+		};
+		B524A0861BDC4E270018F225 /* RelayToggleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B524A0871BDC4E270018F225 /* RelayToggleUITests.swift */,
+				B524A0891BDC4E270018F225 /* Info.plist */,
+			);
+			path = RelayToggleUITests;
+			sourceTree = "<group>";
+		};
+		B524A0901BDC4E270018F225 /* RelayToggle WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B524A0911BDC4E270018F225 /* Interface.storyboard */,
+				B524A0941BDC4E270018F225 /* Assets.xcassets */,
+				B524A0961BDC4E270018F225 /* Info.plist */,
+			);
+			path = "RelayToggle WatchKit App";
+			sourceTree = "<group>";
+		};
+		B524A09F1BDC4E270018F225 /* RelayToggle WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B524A0A21BDC4E270018F225 /* InterfaceController.swift */,
+				B524A0A41BDC4E270018F225 /* ExtensionDelegate.swift */,
+				B524A0A61BDC4E270018F225 /* NotificationController.swift */,
+				B524A0A81BDC4E270018F225 /* Assets.xcassets */,
+				B524A0AA1BDC4E270018F225 /* Info.plist */,
+				B524A0A01BDC4E270018F225 /* Supporting Files */,
+			);
+			path = "RelayToggle WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B524A0A01BDC4E270018F225 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B524A0A11BDC4E270018F225 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B524A0631BDC4E260018F225 /* RelayToggle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B524A0B51BDC4E270018F225 /* Build configuration list for PBXNativeTarget "RelayToggle" */;
+			buildPhases = (
+				B524A0601BDC4E260018F225 /* Sources */,
+				B524A0611BDC4E260018F225 /* Frameworks */,
+				B524A0621BDC4E260018F225 /* Resources */,
+				B524A0B41BDC4E270018F225 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B524A08F1BDC4E270018F225 /* PBXTargetDependency */,
+			);
+			name = RelayToggle;
+			productName = RelayToggle;
+			productReference = B524A0641BDC4E260018F225 /* RelayToggle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B524A0771BDC4E270018F225 /* RelayToggleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B524A0B81BDC4E270018F225 /* Build configuration list for PBXNativeTarget "RelayToggleTests" */;
+			buildPhases = (
+				B524A0741BDC4E270018F225 /* Sources */,
+				B524A0751BDC4E270018F225 /* Frameworks */,
+				B524A0761BDC4E270018F225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B524A07A1BDC4E270018F225 /* PBXTargetDependency */,
+			);
+			name = RelayToggleTests;
+			productName = RelayToggleTests;
+			productReference = B524A0781BDC4E270018F225 /* RelayToggleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B524A0821BDC4E270018F225 /* RelayToggleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B524A0BB1BDC4E270018F225 /* Build configuration list for PBXNativeTarget "RelayToggleUITests" */;
+			buildPhases = (
+				B524A07F1BDC4E270018F225 /* Sources */,
+				B524A0801BDC4E270018F225 /* Frameworks */,
+				B524A0811BDC4E270018F225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B524A0851BDC4E270018F225 /* PBXTargetDependency */,
+			);
+			name = RelayToggleUITests;
+			productName = RelayToggleUITests;
+			productReference = B524A0831BDC4E270018F225 /* RelayToggleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B524A08B1BDC4E270018F225 /* RelayToggle WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B524A0B11BDC4E270018F225 /* Build configuration list for PBXNativeTarget "RelayToggle WatchKit App" */;
+			buildPhases = (
+				B524A08A1BDC4E270018F225 /* Resources */,
+				B524A0B01BDC4E270018F225 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B524A09E1BDC4E270018F225 /* PBXTargetDependency */,
+			);
+			name = "RelayToggle WatchKit App";
+			productName = "RelayToggle WatchKit App";
+			productReference = B524A08C1BDC4E270018F225 /* RelayToggle WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B524A09A1BDC4E270018F225 /* RelayToggle WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B524A0AD1BDC4E270018F225 /* Build configuration list for PBXNativeTarget "RelayToggle WatchKit Extension" */;
+			buildPhases = (
+				B524A0971BDC4E270018F225 /* Sources */,
+				B524A0981BDC4E270018F225 /* Frameworks */,
+				B524A0991BDC4E270018F225 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RelayToggle WatchKit Extension";
+			productName = "RelayToggle WatchKit Extension";
+			productReference = B524A09B1BDC4E270018F225 /* RelayToggle WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B524A05C1BDC4E260018F225 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Suyash Kumar";
+				TargetAttributes = {
+					B524A0631BDC4E260018F225 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					B524A0771BDC4E270018F225 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B524A0631BDC4E260018F225;
+					};
+					B524A0821BDC4E270018F225 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B524A0631BDC4E260018F225;
+					};
+					B524A08B1BDC4E270018F225 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					B524A09A1BDC4E270018F225 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = B524A05F1BDC4E260018F225 /* Build configuration list for PBXProject "RelayToggle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B524A05B1BDC4E260018F225;
+			productRefGroup = B524A0651BDC4E260018F225 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B524A0631BDC4E260018F225 /* RelayToggle */,
+				B524A0771BDC4E270018F225 /* RelayToggleTests */,
+				B524A0821BDC4E270018F225 /* RelayToggleUITests */,
+				B524A08B1BDC4E270018F225 /* RelayToggle WatchKit App */,
+				B524A09A1BDC4E270018F225 /* RelayToggle WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B524A0621BDC4E260018F225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B524A0721BDC4E260018F225 /* LaunchScreen.storyboard in Resources */,
+				B524A06F1BDC4E260018F225 /* Assets.xcassets in Resources */,
+				B524A06D1BDC4E260018F225 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A0761BDC4E270018F225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A0811BDC4E270018F225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A08A1BDC4E270018F225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B524A0951BDC4E270018F225 /* Assets.xcassets in Resources */,
+				B524A0931BDC4E270018F225 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A0991BDC4E270018F225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B524A0A91BDC4E270018F225 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B524A0601BDC4E260018F225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B524A06A1BDC4E260018F225 /* ViewController.swift in Sources */,
+				B524A0681BDC4E260018F225 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A0741BDC4E270018F225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B524A07D1BDC4E270018F225 /* RelayToggleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A07F1BDC4E270018F225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B524A0881BDC4E270018F225 /* RelayToggleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B524A0971BDC4E270018F225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B524A0A71BDC4E270018F225 /* NotificationController.swift in Sources */,
+				B524A0A51BDC4E270018F225 /* ExtensionDelegate.swift in Sources */,
+				B524A0A31BDC4E270018F225 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B524A07A1BDC4E270018F225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B524A0631BDC4E260018F225 /* RelayToggle */;
+			targetProxy = B524A0791BDC4E270018F225 /* PBXContainerItemProxy */;
+		};
+		B524A0851BDC4E270018F225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B524A0631BDC4E260018F225 /* RelayToggle */;
+			targetProxy = B524A0841BDC4E270018F225 /* PBXContainerItemProxy */;
+		};
+		B524A08F1BDC4E270018F225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B524A08B1BDC4E270018F225 /* RelayToggle WatchKit App */;
+			targetProxy = B524A08E1BDC4E270018F225 /* PBXContainerItemProxy */;
+		};
+		B524A09E1BDC4E270018F225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B524A09A1BDC4E270018F225 /* RelayToggle WatchKit Extension */;
+			targetProxy = B524A09D1BDC4E270018F225 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B524A06B1BDC4E260018F225 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B524A06C1BDC4E260018F225 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B524A0701BDC4E260018F225 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B524A0711BDC4E260018F225 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B524A0911BDC4E270018F225 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B524A0921BDC4E270018F225 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B524A0AB1BDC4E270018F225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B524A0AC1BDC4E270018F225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B524A0AE1BDC4E270018F225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RelayToggle WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashkumar.suyash.RelayToggle.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B524A0AF1BDC4E270018F225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RelayToggle WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashkumar.suyash.RelayToggle.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B524A0B21BDC4E270018F225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RelayToggle_WatchKit_Extension;
+				INFOPLIST_FILE = "RelayToggle WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashkumar.suyash.RelayToggle.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		B524A0B31BDC4E270018F225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RelayToggle_WatchKit_Extension;
+				INFOPLIST_FILE = "RelayToggle WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashkumar.suyash.RelayToggle.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		B524A0B61BDC4E270018F225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RelayToggle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashkumar.suyash.RelayToggle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B524A0B71BDC4E270018F225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RelayToggle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashkumar.suyash.RelayToggle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B524A0B91BDC4E270018F225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RelayToggleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashkumar.suyash.RelayToggleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RelayToggle.app/RelayToggle";
+			};
+			name = Debug;
+		};
+		B524A0BA1BDC4E270018F225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RelayToggleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashkumar.suyash.RelayToggleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RelayToggle.app/RelayToggle";
+			};
+			name = Release;
+		};
+		B524A0BC1BDC4E270018F225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RelayToggleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashkumar.suyash.RelayToggleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RelayToggle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B524A0BD1BDC4E270018F225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RelayToggleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.suyashkumar.suyash.RelayToggleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RelayToggle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B524A05F1BDC4E260018F225 /* Build configuration list for PBXProject "RelayToggle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B524A0AB1BDC4E270018F225 /* Debug */,
+				B524A0AC1BDC4E270018F225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B524A0AD1BDC4E270018F225 /* Build configuration list for PBXNativeTarget "RelayToggle WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B524A0AE1BDC4E270018F225 /* Debug */,
+				B524A0AF1BDC4E270018F225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B524A0B11BDC4E270018F225 /* Build configuration list for PBXNativeTarget "RelayToggle WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B524A0B21BDC4E270018F225 /* Debug */,
+				B524A0B31BDC4E270018F225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B524A0B51BDC4E270018F225 /* Build configuration list for PBXNativeTarget "RelayToggle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B524A0B61BDC4E270018F225 /* Debug */,
+				B524A0B71BDC4E270018F225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B524A0B81BDC4E270018F225 /* Build configuration list for PBXNativeTarget "RelayToggleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B524A0B91BDC4E270018F225 /* Debug */,
+				B524A0BA1BDC4E270018F225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B524A0BB1BDC4E270018F225 /* Build configuration list for PBXNativeTarget "RelayToggleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B524A0BC1BDC4E270018F225 /* Debug */,
+				B524A0BD1BDC4E270018F225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B524A05C1BDC4E260018F225 /* Project object */;
+}

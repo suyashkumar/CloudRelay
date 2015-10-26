@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+				<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- Optional theme -->
+<!---		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.7.0/nv.d3.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.7.0/nv.d3.min.js"></script>
+		<script src="js/core.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+		<style>
+			body {margin-top:30px;}
+			.btn.act, .btn:act {background-color:blue;}
+		</style>
+	</head>
+
+	<body ng-app="relayapp" ng-controller="mainController">
+		<div class="container">
+		
+		<div class="row">
+			<div class="well text-center col-md-12"> <h2>Relay Control</h2></div>
+		</div>
+		<div class="row">
+			<div class="text-center col-sm-4"><h2><span class="label label-default">Relay 1</span></h2></div>
+			<div class="text-center col-sm-4"><button class="btn-success btn btn-lg" ng-click="toggle()">Toggle</button> <button class="btn-warning btn btn-lg" ng-click="getStatus()">Refesh Status</button> </div>
+			<div class="text-center col-sm-4" id="status">Status: {{status}}</div>
+			
+		</div>
+		<div class="row">
+			
+		</div>
+
+
+		</div>	
+	</body>
+
+
+</html>
+
