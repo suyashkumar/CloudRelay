@@ -22,6 +22,9 @@
 		B524A0A51BDC4E270018F225 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524A0A41BDC4E270018F225 /* ExtensionDelegate.swift */; };
 		B524A0A71BDC4E270018F225 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B524A0A61BDC4E270018F225 /* NotificationController.swift */; };
 		B524A0A91BDC4E270018F225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B524A0A81BDC4E270018F225 /* Assets.xcassets */; };
+		B54154681BE32A77000A3E4E /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B54154671BE32A77000A3E4E /* keys.plist */; };
+		B54154691BE32D51000A3E4E /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B54154671BE32A77000A3E4E /* keys.plist */; };
+		B541546A1BE32D51000A3E4E /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = B54154671BE32A77000A3E4E /* keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,7 @@
 		B524A0A61BDC4E270018F225 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		B524A0A81BDC4E270018F225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B524A0AA1BDC4E270018F225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B54154671BE32A77000A3E4E /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = keys.plist; path = RelayToggle/keys.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				B524A0A21BDC4E270018F225 /* InterfaceController.swift */,
+				B54154671BE32A77000A3E4E /* keys.plist */,
 				B524A0A41BDC4E270018F225 /* ExtensionDelegate.swift */,
 				B524A0A61BDC4E270018F225 /* NotificationController.swift */,
 				B524A0A81BDC4E270018F225 /* Assets.xcassets */,
@@ -373,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54154681BE32A77000A3E4E /* keys.plist in Resources */,
 				B524A0721BDC4E260018F225 /* LaunchScreen.storyboard in Resources */,
 				B524A06F1BDC4E260018F225 /* Assets.xcassets in Resources */,
 				B524A06D1BDC4E260018F225 /* Main.storyboard in Resources */,
@@ -399,6 +405,7 @@
 			files = (
 				B524A0951BDC4E270018F225 /* Assets.xcassets in Resources */,
 				B524A0931BDC4E270018F225 /* Interface.storyboard in Resources */,
+				B54154691BE32D51000A3E4E /* keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B541546A1BE32D51000A3E4E /* keys.plist in Resources */,
 				B524A0A91BDC4E270018F225 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

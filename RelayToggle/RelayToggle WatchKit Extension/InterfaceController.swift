@@ -5,18 +5,19 @@
 //  Created by Suyash Kumar on 10/24/15.
 //  Copyright © 2015 Suyash Kumar. All rights reserved.
 //
-
 import WatchKit
 import Foundation
-import Foundation
-
 
 
 
 class InterfaceController: WKInterfaceController {
-
+    var keyDict: NSDictionary?
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        if let path = NSBundle.mainBundle().pathForResource("keys", ofType: "plist") {
+            keyDict = NSDictionary(contentsOfFile: path) as? Dictionary<String,String>
+        }
         refreshStatus()
         
         // Configure interface objects here.
@@ -24,6 +25,10 @@ class InterfaceController: WKInterfaceController {
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        // Retrieve API access keys from keys.plist:
+        
+        
+        
         super.willActivate()
     }
 
@@ -40,7 +45,8 @@ class InterfaceController: WKInterfaceController {
         refreshStatus()
     }
     @IBAction func toggle() {
-        let urlPath: String = "https://api.particle.io/v1/devices/250025001747343338333633/led?access_token=97bbe3755d84dc951179331beacf98cb93b4b6b0"
+        
+        let urlPath: String=(keyDict!["POSTURL"] as? String)!
         let url1: NSURL = NSURL(string: urlPath)!
         var request1: NSMutableURLRequest = NSMutableURLRequest(URL: url1)
         request1.HTTPMethod="POST"
@@ -85,7 +91,7 @@ class InterfaceController: WKInterfaceController {
         task.resume()
     }
     func refreshStatus(){
-        let urlPath: String = "https://api.particle.io/v1/devices/250025001747343338333633/led?access_token=97bbe3755d84dc951179331beacf98cb93b4b6b0"
+        let urlPath: String=(keyDict!["POSTURL"] as? String)!
         let url1: NSURL = NSURL(string: urlPath)!
         var request1: NSMutableURLRequest = NSMutableURLRequest(URL: url1)
         request1.HTTPMethod="POST"
