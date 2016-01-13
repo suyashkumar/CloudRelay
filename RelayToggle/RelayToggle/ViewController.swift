@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var toggleButton: UIButton!
+    
     var keyDict:NSDictionary?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +20,8 @@ class ViewController: UIViewController {
         if let path = NSBundle.mainBundle().pathForResource("keys", ofType: "plist") {
             keyDict = NSDictionary(contentsOfFile: path) as? Dictionary<String,String>
         }
+        self.title="RelayToggle"
+        updateStatus()
     }
    
     @IBAction func togglePressed(sender: UIButton) {
@@ -25,15 +31,21 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     func toggle(){
+        request("toggle")
+    }
+    func updateStatus(){
+        request("status")
+    }
+    
+    func request(reqType: String){
         let urlPath: String = keyDict!["POSTURL"] as! String
         let url1: NSURL = NSURL(string: urlPath)!
         var request1: NSMutableURLRequest = NSMutableURLRequest(URL: url1)
         request1.HTTPMethod="POST"
         
         
-        request1.HTTPBody = ("{\"args\":\"toggle\"}" as NSString).dataUsingEncoding(NSUTF8StringEncoding,allowLossyConversion: true)
+        request1.HTTPBody = ("{\"args\":\""+reqType+"\"}" as NSString).dataUsingEncoding(NSUTF8StringEncoding,allowLossyConversion: true)
         
         request1.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
@@ -46,19 +58,29 @@ class ViewController: UIViewController {
             do{
                 let jsonData = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
                 print(jsonData["return_value"]!!.description)
-                //print((jsonData["return_value"]=="1")
+                
                 var currentValue=jsonData["return_value"]!!.description
                 if (currentValue=="1"){
-                    //self.statusLabel.setText("SK Relay 1:\nOn")
-                    //self.statusLabel.setTextColor(UIColor.greenColor())
-                    //self.toggleButton.setBackgroundColor(UIColor.redColor())
-                    //self.toggleButton.setTitle("Toggle Off")
+                    dispatch_async(dispatch_get_main_queue(), {
+                        // code here
+                        
+                        self.statusLabel.text="On"
+                        //self.statusLabel.textColor=UIColor.greenColor()
+                        
+                        //self.statusLabel.setTextColor(UIColor.greenColor())
+                        self.toggleButton.backgroundColor=UIColor.redColor()
+                        self.toggleButton.setTitle("Toggle Off", forState: UIControlState.Normal)
+                    })
                 }
                 else{
-                    //self.statusLabel.setText("SK Relay 1:\nOff")
-                    //self.statusLabel.setTextColor(UIColor.whiteColor())
-                    //self.toggleButton.setBackgroundColor(UIColor.greenColor())
-                    //self.toggleButton.setTitle("Toggle On")
+                    dispatch_async(dispatch_get_main_queue(), {
+                        // code here
+                        
+                        self.statusLabel.text="Off"
+                        //self.statusLabel.setTextColor(UIColor.whiteColor())
+                        self.toggleButton.backgroundColor=UIColor.greenColor()
+                        self.toggleButton.setTitle("Toggle On", forState: UIControlState.Normal)
+                    })
                     
                 }
                 
@@ -70,10 +92,13 @@ class ViewController: UIViewController {
         });
         
         task.resume()
+        
+        
+    }
+    
 
+        
         
     }
 
-
-}
 
