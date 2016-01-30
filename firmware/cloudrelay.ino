@@ -4,6 +4,7 @@ Simple cloud controlled relay.
 Runs on a Spark Photon with a relay's control pin attached to D7.
 */
 int control = D7;
+int button = D5;
 int state=0; // Holds current state of the relay. 
 void setup()
 {
@@ -14,7 +15,11 @@ void setup()
 
 void loop()
 {
-   // Nothing to do here
+	// Check state of the button
+	if (digitalRead(button)){
+		ledToggle("toggle"); // Toggle Relay state
+		delay(300); // Wait 300ms before letting check-loop continue
+	}
 }
 
 /*
